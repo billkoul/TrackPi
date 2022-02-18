@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/_Layout.cshtml";
+}
+@using MVVMEntityLayer;
+
+
+<div class="d-xl-flex justify-content-between align-items-start">
+    <h2 class="text-dark font-weight-bold mb-2"> Device status </h2>
+    <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+        <!--<div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-link text-light py-0 border-right">7 Days</button>
+          <button type="button" class="btn btn-link text-dark py-0 border-right">1 Month</button>
+          <button type="button" class="btn btn-link text-light py-0">3 Month</button>
+        </div>-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tab-content tab-transparent-content">
+            <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+                <div class="row">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Device @ViewData["deviceName"]</h4>
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr><td><i class="mdi mdi-signal"></i> Status</td><td>Offline</td> </tr>
+                                        <tr><td><i class="mdi mdi-alert"></i> Open alerts</td><td>0</td> </tr>
+                                        <tr><td><i class="mdi mdi-reload"></i> Last updated</td><td>Today</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
