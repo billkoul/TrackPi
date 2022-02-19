@@ -1,0 +1,17 @@
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMViewModelLayer.deps.json
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMViewModelLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\ref\MVVMViewModelLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMViewModelLayer.pdb
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMDataLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMEntityLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMEntityLayer.pdb
+F:\VectoWebAPI\MVVMViewModelLayer\bin\Debug\net5.0\MVVMDataLayer.pdb
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.csprojAssemblyReference.cache
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.AssemblyInfoInputs.cache
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.AssemblyInfo.cs
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.csproj.CoreCompileInputs.cache
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.csproj.CopyComplete
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\ref\MVVMViewModelLayer.dll
+F:\VectoWebAPI\MVVMViewModelLayer\obj\Debug\net5.0\MVVMViewModelLayer.pdb

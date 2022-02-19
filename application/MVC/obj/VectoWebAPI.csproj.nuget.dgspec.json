@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\VectoWebAPI\\MVC\\VectoWebAPI.csproj": {}
+  },
+  "projects": {
+    "F:\\VectoWebAPI\\MVC\\VectoWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\VectoWebAPI\\MVC\\VectoWebAPI.csproj",
+        "projectName": "VectoWebAPI",
+        "projectPath": "F:\\VectoWebAPI\\MVC\\VectoWebAPI.csproj",
+        "packagesPath": "C:\\Users\\babou\\.nuget\\packages\\",
+        "outputPath": "F:\\VectoWebAPI\\MVC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj": {
+                "projectPath": "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj"
+              },
+              "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj": {
+                "projectPath": "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj"
+              },
+              "F:\\VectoWebAPI\\MVVMViewModelLayer\\MVVMViewModelLayer.csproj": {
+                "projectPath": "F:\\VectoWebAPI\\MVVMViewModelLayer\\MVVMViewModelLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj",
+        "projectName": "MVVMDataLayer",
+        "projectPath": "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj",
+        "packagesPath": "C:\\Users\\babou\\.nuget\\packages\\",
+        "outputPath": "F:\\VectoWebAPI\\MVVMDataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj",
+        "projectName": "MVVMEntityLayer",
+        "projectPath": "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj",
+        "packagesPath": "C:\\Users\\babou\\.nuget\\packages\\",
+        "outputPath": "F:\\VectoWebAPI\\MVVMEntityLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.DataAnnotations": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\VectoWebAPI\\MVVMViewModelLayer\\MVVMViewModelLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\VectoWebAPI\\MVVMViewModelLayer\\MVVMViewModelLayer.csproj",
+        "projectName": "MVVMViewModelLayer",
+        "projectPath": "F:\\VectoWebAPI\\MVVMViewModelLayer\\MVVMViewModelLayer.csproj",
+        "packagesPath": "C:\\Users\\babou\\.nuget\\packages\\",
+        "outputPath": "F:\\VectoWebAPI\\MVVMViewModelLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj": {
+                "projectPath": "F:\\VectoWebAPI\\MVVMDataLayer\\MVVMDataLayer.csproj"
+              },
+              "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj": {
+                "projectPath": "F:\\VectoWebAPI\\MVVMEntityLayer\\MVVMEntityLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

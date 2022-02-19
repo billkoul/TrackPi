@@ -1,0 +1,12 @@
+F:\VectoWebAPI\MVVMEntityLayer\bin\Debug\net5.0\MVVMEntityLayer.deps.json
+F:\VectoWebAPI\MVVMEntityLayer\bin\Debug\net5.0\MVVMEntityLayer.dll
+F:\VectoWebAPI\MVVMEntityLayer\bin\Debug\net5.0\ref\MVVMEntityLayer.dll
+F:\VectoWebAPI\MVVMEntityLayer\bin\Debug\net5.0\MVVMEntityLayer.pdb
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.csprojAssemblyReference.cache
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.AssemblyInfoInputs.cache
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.AssemblyInfo.cs
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.csproj.CoreCompileInputs.cache
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.dll
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\ref\MVVMEntityLayer.dll
+F:\VectoWebAPI\MVVMEntityLayer\obj\Debug\net5.0\MVVMEntityLayer.pdb

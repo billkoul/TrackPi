@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Live tracking";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@using MVVMEntityLayer;
+
+<div class="d-xl-flex justify-content-between align-items-start">
+    <h2 class="text-dark font-weight-bold mb-2"> Live tracking </h2>
+    <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+        <!--<div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-link text-light py-0 border-right">7 Days</button>
+          <button type="button" class="btn btn-link text-dark py-0 border-right">1 Month</button>
+          <button type="button" class="btn btn-link text-light py-0">3 Month</button>
+        </div>-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tab-content tab-transparent-content">
+            <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+                <div class="row">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="mapid"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+
+@section ScriptsFooter{
+    <script>
+
+        var mymap = L.map('mapid').setView([40.5256, 23.0542], 13);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: '',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        @if (Model.Locations != null && Model.Locations.Count > 0) {
+            foreach (Location loc in Model.Locations)
+            {
+                <text>
+                L.marker([@Html.DisplayFor(m => loc.Lat), @Html.DisplayFor(m => loc.Lon)]).addTo(mymap);
+                </text>
+            }
+        }
+        @if (Model.Location != null) {
+            <text>
+            L.marker([@Html.Raw(Model.Location.Lat), @Html.Raw(Model.Location.Lon)]).addTo(mymap);
+            </text>
+        }
+        /*L.circle([40.5256, 23.0542], 500, {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5
+        }).addTo(mymap).bindPopup("I am a circle.");*/
+
+
+        //var popup = L.popup();
+    </script>
+}

@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Trips";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+@using MVVMEntityLayer;
+
+
+
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+@functions{
+    public string GetAntiXsrfRequestToken()
+    {
+        return Xsrf.GetAndStoreTokens(Context).RequestToken;
+    }
+}
+
+<div class="d-xl-flex justify-content-between align-items-start">
+    <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+        <form class="btn-group bg-white p-3" role="group" style="height:80px;">
+            <input type="hidden" id="RequestVerificationToken" name="RequestVerificationToken" value="@GetAntiXsrfRequestToken()">
+            <input type="hidden" id="vehIdForm" name="vehId" value="@ViewData["deviceName"]">
+            <div class="form-group row">
+                <label for="from" class="col-form-label">From</label>
+                <div class="col-10">
+                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" name="from">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="to" class="col-form-label">To</label>
+                <div class="col-10">
+                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" name="to">
+                </div>
+            </div>
+            <button class="form-control" id='filter'>Filter</button>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="tab-content tab-transparent-content">
+            <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+                <div class="row">
+                    <div class="col-12 grid-margin">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Trips for Device  @ViewData["deviceName"]</h4>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="mapid"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section ScriptsFooter{
+    <script type="text/javascript" src="/js/jquery.form.min.js?v=2"></script>
+    <script>
+        var mymap = L.map('mapid').setView([40.5256, 23.0542], 13);
+
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+            maxZoom: 18,
+            attribution: '',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        @if (Model.Locations != null && Model.Locations.Count > 0) {
+            foreach (Location loc in Model.Locations)
+            {
+                <text>
+                L.marker([@Html.DisplayFor(m => loc.Lat), @Html.DisplayFor(m => loc.Lon)]).addTo(mymap);
+                </text>
+            }
+        }
+        @if (Model.Location != null) {
+            <text>
+            L.marker([@Html.Raw(Model.Location.Lat), @Html.Raw(Model.Location.Lon)]).addTo(mymap);
+            </text>
+        }
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(document).on("click", "#filter", function () {
+                show_wait();
+                var btn = $(this);
+                var form = $(this).closest('form');
+                btn.addClass('').attr('disabled', true);
+
+                $.ajax({
+                    url: '/trips/filter',
+                    type: 'POST',
+                    data: {
+                        formJson: JSON.stringify(form.serializeArray())
+                    },
+                    headers: {
+                        "Content-type": "application/x-www-form-urlencoded",
+                        "RequestVerificationToken": $('#RequestVerificationToken').val()
+                    },
+                    dataType: 'json',
+                    success: function (data) {
+                        showMsg(data["result"] == 1 ? 'success' : 'Oups', data['msg']);
+                        btn.removeClass('T').attr('disabled', false);
+                    },
+                    error: function (data) {
+                        showMsg('Oups!', 'Something went wrong.');
+                        btn.removeClass('T').attr('disabled', false);
+                    }
+                });
+            });
+        });
+    </script>
+}
