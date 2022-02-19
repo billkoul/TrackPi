@@ -1,9 +1,0 @@
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\bin\Release\netcoreapp3.1\MVVMEntityLayer.deps.json
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\bin\Release\netcoreapp3.1\MVVMEntityLayer.dll
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\bin\Release\netcoreapp3.1\MVVMEntityLayer.pdb
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.csprojAssemblyReference.cache
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.csproj.CoreCompileInputs.cache
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.AssemblyInfoInputs.cache
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.AssemblyInfo.cs
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.dll
-C:\Users\billkoul\Downloads\app.track-pi.com\MVVMEntityLayer\obj\Release\netcoreapp3.1\MVVMEntityLayer.pdb
