@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     env:
-      working directory: ./application
+      working directory: ./application/MVC
       
     runs-on: ubuntu-latest
 
