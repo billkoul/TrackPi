@@ -41,10 +41,7 @@ namespace trackpi.Controllers
         [HttpPost]
         public IActionResult Filter(string formJson)
         {
-            FormResponse formResponse = new FormResponse();
-
-            var str = JsonConvert.DeserializeObject<string>(formJson);
-            var formFilter = JsonConvert.DeserializeObject<TripFilter>(str);
+            //TODO Filter
 
             formResponse.Msg = "Ok";
 
