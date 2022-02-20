@@ -42,7 +42,7 @@ namespace trackpi.Controllers
         public IActionResult Filter(string formJson)
         {
             //TODO Filter
-
+            FormResponse formResponse = new FormResponse();
             formResponse.Msg = "Ok";
 
             return Json(formResponse);
