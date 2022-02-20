@@ -1,7 +1,7 @@
 # trackpi
-This is a complete MVVM design pattern project in .NET Core.
+MVVM design pattern in .NET Core with Entity Framework.
 
-The project simulates a user dashboard to manage IoT tracking devices. 
+TrackPi is a user dashboard to manage IoT tracking devices. 
 
 The app reads location of each device from MySQL and displays the devices subscribed by the user in database.
 
